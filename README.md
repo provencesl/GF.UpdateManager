@@ -1,2 +1,9 @@
 # GF.UpdateManager
 使用大量Monobehaviour的Update()方法时，更新管理器非常有用
+
+对比MonoUpdate和ScriptUpdate:
+结论：ScriptUpdate使用时间比较少
+
+MonoUpdate的测试方法是生成n个Cube,每个Cube挂一个Monobehavior脚本，在Monobehavior的Update中进行位置的改变。
+ScriptUpdate的测试方法是，生成n个Cube和n个操作Cube的类。在ScriptUpdateManager的Update中分别调用类中的Update。
+
